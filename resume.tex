@@ -3,7 +3,7 @@
 \setlength{\textheight}{9.7in}
 
 \begin{document}
-\name{\Large Brenden Matthews}
+\name{\Large Brenden Matthews \normalsize \mdseries \emph{-- the productivity of 5 engineers for the price of 2}}
 \begin{resume}
 
     \section{\mysidestyle Contact\\Information}
@@ -60,6 +60,16 @@
     \textbf{Braze, Inc.}, New York, NY \vspace{2mm}\\\vspace{1mm}%
     \textsl{Engineering} \hfill \textbf{Oct 2018 -- April 2019}\\
     Building infrastructure with Kubernetes.
+    
+    \begin{itemize}
+        \item Lead an effort to transform ad-hoc Bash-based deployment scripts
+        into declarative Helm and Terraform based deployments
+        \item Provided engineering-wide guidance and training for migrating to
+        Terraform and Helm
+        \item Ported primary Rails monolith to Kubernetes
+        \item Implemented continuous integration and deployment system for
+        Kubernetes applications
+    \end{itemize}
 
     \textbf{Citadel LLC}, New York, NY \vspace{2mm}\\\vspace{1mm}%
     \textsl{Engineering} \hfill \textbf{Oct 2017 -- Jun 2018}\\
@@ -68,23 +78,36 @@
     with tools that integrate on-prem and cloud (AWS and GCE) data
     infrastructure.
 
-    \textbf{Mesosphere, Inc.}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Solutions} \hfill \textbf{Jan 2015 -- Feb 2017}\\
-    Early Mesosphere employee, was an integral part of founding the company.
-    Worked on multiple customer engagements, acting in both pre-sales and
-    post-sales positions.
+    \begin{itemize}
+        \item Lead an effort to modernize data access, control, and
+        authorization
+        \item Managed a migration of legacy data systems to PostgreSQL on RDS
+        backends
+        \item Provided technical leadership to the data science team for best
+        practices on building and deploying very large machine learning jobs
+        with Spark, Redshift, and Snowflake
+    \end{itemize}
+
+    \pagebreak[4]
+
+    \textbf{D2IQ (fka Mesosphere), Inc.}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Sales \& Engineering} \hfill \textbf{Jan 2015 -- Feb 2017}\\
+    As an early Mesosphere employee, was an integral part of founding the
+    company.  Worked on multiple customer engagements, acting in both pre-sales
+    and post-sales positions. Assisted management with fundraising pitches.
 
     \begin{itemize}
-    \item Built cloud migration plans for enterprise customers
-    \item Lead and lectured week-long in-depth onsite training sessions
-    \item Advising senior management on container technologies
-    \item Lectured and gave talks at several meetups and conferences
-    \item Contributed to various engineering efforts
-    \item Published several original blog posts
-    \item Built and maintained marathon-lb, the canonical load balancing and
-     service discovery tool for Marathon and DC/OS
-    \item Customers were primarily enterprise users, including financial,
-     telecom, and tech companies
+        \item Built the initial sales team by leading key hires for VP Sales,
+        early SEs, SAs, and Head of Services
+        \item Built cloud migration plans for enterprise customers
+        \item Lead and lectured week-long in-depth onsite training sessions
+        \item Advised C-level management at Fortune 500 companies on container
+        technology adoption to accelerate their innovation
+        \item Lectured and gave talks at several meetups and conferences
+        \item Contributed to various engineering efforts
+        \item Published several original blog posts
+        \item Built and maintained marathon-lb, the canonical load balancing and
+        service discovery tool for Marathon and DC/OS
     \end{itemize}
 
     \textbf{Airbnb, Inc.}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
@@ -109,24 +132,41 @@
     capture/parsing tools.
 
     \begin{itemize}
-    \item Created a customized database solution with integrated flexible query language for accessing millions of streaming records in real time.
-    \item Designed and implemented asynchronous communication library with feature set similar to ZeroMQ, with C++ and Python interfaces.
-    \item Designed and implemented a reporting library for generating key performance indicators from vast quantities of raw data, leveraging previously mentioned customized database.
-    \item Introduced new development and debugging methodologies to the team which significantly improved the pace of development and quality of deliverables.
-    \item Assisted junior and senior developers on all aspects of software engineering.
-    \item Oversaw design and implementation of schema-based XML software specifications.
+        \item Created a customized database solution with integrated flexible
+        query language for accessing millions of streaming records in real time.
+        \item Designed and implemented asynchronous communication library with
+        feature set similar to ZeroMQ, with C++ and Python interfaces.
+        \item Designed and implemented a reporting library for generating key
+        performance indicators from vast quantities of raw data, leveraging
+        previously mentioned customized database.
+        \item Introduced new development and debugging methodologies to the team
+        which significantly improved the pace of development and quality of
+        deliverables.
+        \item Assisted junior and senior developers on all aspects of software
+        engineering.
+        \item Oversaw design and implementation of schema-based XML software
+        specifications.
     \end{itemize}
+    
+    \pagebreak[4]
 
     \textbf{Real Time Measurements, Inc.}, Calgary, AB \vspace{2mm}\\\vspace{1mm}%
     \textsl{Engineering} \hfill \textbf{2003 -- 2009}\\
 
     \begin{itemize}
-    \item Developed end user applications, web services, and embedded software.
-    \item Involved in strategic planning, performance and productivity improvement, organizational design, e-commerce, new media and Internet promotion.
-    \item Planned, participated, and coordinated team building exercises while demonstrating strong leadership skills.
-    \item Configured and managed servers, automated backup systems, and provided support for customers as well as in-house support.
-    \item Leveraged new technologies to enhance our product-to-customer experience in a timely and cost effective fashion.
-    \item Implemented cost reduction IT strategy to make use of existing infrastructure instead of requiring further equipment purchases.
+        \item Developed end user applications, web services, and embedded
+        software.
+        \item Involved in strategic planning, performance and productivity
+        improvement, organizational design, e-commerce, new media and Internet
+        promotion.
+        \item Planned, participated, and coordinated team building exercises
+        while demonstrating strong leadership skills.
+        \item Configured and managed servers, automated backup systems, and
+        provided support for customers as well as in-house support.
+        \item Leveraged new technologies to enhance our product-to-customer
+        experience in a timely and cost effective fashion.
+        \item Implemented cost reduction IT strategy to make use of existing
+        infrastructure instead of requiring further equipment purchases.
     \end{itemize}
 
     \vspace{3mm}
@@ -135,7 +175,7 @@
 
     \emph{Languages:} Rust, C, C++, Python, Ruby, Bash, Go, Java, Scala, Kotlin, \LaTeX \\
     \emph{Data Technology:} Kafka, Cassandra, Redis, PostgreSQL, ElasticSearch/Lucene,
-     MySQL, Hadoop, Hive, Presto, RedShift, BigQuery, SQS, EMR, RDS
+     MySQL, Hadoop, Hive, Presto, RedShift, BigQuery, SQS, EMR, RDS, Snowflake
 
 \end{resume}
 \end{document}

@@ -1,9 +1,13 @@
 \documentclass[margin,line]{resume}
 \usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
 \setlength{\textheight}{9.7in}
 
 \begin{document}
-\name{\Large Brenden Matthews}
+\begin{tikzpicture}
+\clip (0,0) circle (1cm) ;
+\node[anchor=center] at (0,0) {\includegraphics[width=2cm]{myface}};
+\end{tikzpicture} \name{\Large Brenden Matthews}
 \begin{resume}
 
     \section{\mysidestyle Contact\\Information}
@@ -89,8 +93,6 @@
         with Spark, Redshift, and Snowflake
     \end{itemize}
 
-    \pagebreak[4]
-
     \textbf{D2IQ (fka Mesosphere), Inc.}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
     \textsl{Sales \& Engineering} \hfill \textbf{Jan 2015 -- Feb 2017}\\
     As an early Mesosphere employee, was an integral part of founding the
@@ -157,8 +159,6 @@
         specifications.
     \end{itemize}
     
-    \pagebreak[4]
-
     \textbf{Real Time Measurements, Inc.}, Calgary, AB \vspace{2mm}\\\vspace{1mm}%
     \textsl{Engineering} \hfill \textbf{2003 -- 2009}\\
 

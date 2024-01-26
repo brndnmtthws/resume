@@ -2,6 +2,11 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
 \setlength{\textheight}{9.7in}
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
 
 \begin{document}
 \begin{tikzpicture}
@@ -30,7 +35,7 @@
     Have given numerous talks on my work at conferences and private engagements,
     including but not limited to \textbf{All Things Open}, \textbf{QCon},
     \textbf{LinuxCon}, \textbf{ContainerCon}, and \textbf{MesosCon}.
-    
+
     \vspace{3mm}
 
     \section{\mysidestyle Open\\Source}
@@ -54,10 +59,25 @@
 
     \vspace{3mm}
 
+    \begin{absolutelynopagebreak}
     \section{\mysidestyle Professional\\Experience}
 
-    \textbf{Braze, Inc.}, New York, NY \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Engineering} \hfill \textbf{Oct 2018 -- April 2019}\\
+    \textbf{Entrepreneur, Author, Consultant}, New York, NY\hfill \textbf{May 2019 -- present}\vspace{2mm}\\\vspace{1mm}%
+    \begin{itemize}
+        \item Started several bootstrapped businesses
+        \item Engaged in a mix of consulting work
+        \item Wrote two books on Rust programming
+        \item Contributed to a number of open source projects
+        \item Gave a number of talks at meetups
+    \end{itemize}
+    \end{absolutelynopagebreak}
+
+    \vspace{5mm}
+
+    \begin{absolutelynopagebreak}
+    \textbf{Braze, Inc.}, New York, NY\hfill \textbf{Oct 2018 -- April 2019}\vspace{2mm}\\\vspace{1mm}%
+    \textsl{Engineering}
+
     Building infrastructure with Kubernetes.
     
     \begin{itemize}
@@ -69,9 +89,14 @@
         \item Implemented continuous integration and deployment system for
         Kubernetes applications
     \end{itemize}
+    \end{absolutelynopagebreak}
 
-    \textbf{Citadel LLC}, New York, NY \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Engineering} \hfill \textbf{Oct 2017 -- Jun 2018}\\
+    \vspace{5mm}
+
+    \begin{absolutelynopagebreak}
+    \textbf{Citadel LLC}, New York, NY\hfill \textbf{Oct 2017 -- Jun 2018}\vspace{2mm}\\\vspace{1mm}%
+    \textsl{Engineering}
+
     Joined the platform engineering group as part of the data engineering
     team to build out Citadel's data platform technology. Primarily working
     with tools that integrate on-prem and cloud (AWS and GCE) data
@@ -86,9 +111,14 @@
         practices on building and deploying very large machine learning jobs
         with Spark, Redshift, and Snowflake
     \end{itemize}
+    \end{absolutelynopagebreak}
 
-    \textbf{D2IQ (fka Mesosphere), Inc.}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Sales \& Engineering} \hfill \textbf{Jan 2015 -- Feb 2017}\\
+    \vspace{5mm}
+
+    \begin{absolutelynopagebreak}
+    \textbf{D2IQ (fka Mesosphere), Inc.}, San Francisco, CA\hfill \textbf{Jan 2015 -- Feb 2017}\vspace{2mm}\\\vspace{1mm}%
+    \textsl{Sales \& Engineering}
+
     As an early Mesosphere employee, was an integral part of founding the
     company.  Worked on multiple customer engagements, acting in both pre-sales
     and post-sales positions. Assisted management with fundraising pitches.
@@ -106,9 +136,14 @@
         \item Built and maintained marathon-lb, the canonical load balancing and
         service discovery tool for Marathon and DC/OS
     \end{itemize}
+    \end{absolutelynopagebreak}
 
-    \textbf{Airbnb, Inc.}, San Francisco, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Engineering} \hfill \textbf{Feb 2013 -- Jan 2015}\\
+    \vspace{5mm}
+
+    \begin{absolutelynopagebreak}
+    \textbf{Airbnb, Inc.}, San Francisco, CA\hfill \textbf{Feb 2013 -- Jan 2015}\vspace{2mm}\\\vspace{1mm}%
+    \textsl{Engineering}
+
     Early employee at Airbnb. Joined the Data Infrastructure team to help
     Airbnb scale to support the massive growth of the company, and meet the
     company's needs for managing a large, growing data warehouse. Worked
@@ -129,48 +164,58 @@
         \item Gave a number of internal tech talks on emerging technologies at
         Airbnb
     \end{itemize}
+    \end{absolutelynopagebreak}
 
-    \textbf{Newfield Wireless, Inc.}, Berkeley, CA \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Engineering} \hfill \textbf{Sept 2009 -- Nov 2012}\\
+    \vspace{5mm}
+
+    \begin{absolutelynopagebreak}
+    \textbf{Newfield Wireless, Inc.}, Berkeley, CA\hfill \textbf{Sept 2009 -- Nov 2012}\vspace{2mm}\\\vspace{1mm}%
+    \textsl{Engineering}
+
     Leveraged 3GPP layer 3 expertise to build a UMTS network data parser and
     indexer. Designed and implemented the first suite of real-time 3GPP LTE
     capture/parsing tools.
 
     \begin{itemize}
         \item Created a customized database solution with integrated flexible
-        query language for accessing millions of streaming records in real time.
+        query language for accessing millions of streaming records in real-time
         \item Designed and implemented asynchronous communication library with
-        feature set similar to ZeroMQ, with C++ and Python interfaces.
+        feature set similar to ZeroMQ, with C++ and Python interfaces
         \item Designed and implemented a reporting library for generating key
         performance indicators from vast quantities of raw data, leveraging
-        previously mentioned customized database.
+        previously mentioned customized database
         \item Introduced new development and debugging methodologies to the team
         which significantly improved the pace of development and quality of
-        deliverables.
+        deliverables
         \item Assisted junior and senior developers on all aspects of software
-        engineering.
+        engineering
         \item Oversaw design and implementation of schema-based XML software
-        specifications.
+        specifications
     \end{itemize}
+    \end{absolutelynopagebreak}
     
-    \textbf{Real Time Measurements, Inc.}, Calgary, AB \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Engineering} \hfill \textbf{2003 -- 2009}\\
+    \vspace{5mm}
+
+    \begin{absolutelynopagebreak}
+    \textbf{Real Time Measurements, Inc.}, Calgary, AB\hfill \textbf{2003 -- 2009}\vspace{2mm}\\\vspace{1mm}%
+    \textsl{Engineering}
 
     \begin{itemize}
         \item Developed end user applications, web services, and embedded
-        software.
+        software
         \item Involved in strategic planning, performance and productivity
         improvement, organizational design, e-commerce, new media and Internet
-        promotion.
+        promotion
         \item Planned, participated, and coordinated team building exercises
-        while demonstrating strong leadership skills.
+        while demonstrating strong leadership skills
         \item Configured and managed servers, automated backup systems, and
-        provided support for customers as well as in-house support.
+        provided support for customers as well as in-house support
         \item Leveraged new technologies to enhance our product-to-customer
-        experience in a timely and cost effective fashion.
+        experience in a timely and cost effective fashion
         \item Implemented cost reduction IT strategy to make use of existing
-        infrastructure instead of requiring further equipment purchases.
+        infrastructure instead of requiring further equipment purchases
     \end{itemize}
+    \end{absolutelynopagebreak}
 
     \vspace{3mm}
     

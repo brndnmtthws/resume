@@ -1,5 +1,5 @@
 PDFLATEX=pdflatex
-DEPS = resume.cls
+DEPS = resume.cls myface.jpg
 
 resume.pdf: resume.tex $(DEPS)
 	$(PDFLATEX) $<

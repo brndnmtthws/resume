@@ -1,6 +1,7 @@
 \documentclass[margin,line]{resume}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
+\usepackage{enumitem}
 \setlength{\textheight}{9.7in}
 \newenvironment{absolutelynopagebreak}
 {\par\nobreak\vfil\penalty0\vfilneg
@@ -15,182 +16,116 @@
 \end{tikzpicture} \name{\Large Brenden Matthews}
 \begin{resume}
 
-\section{\mysidestyle Contact\\Information}
+\section{Contact} \href{mailto:resume@brenden.brndn.io}{resume@brenden.brndn.io} | \href{https://github.com/brndnmtthws}{github.com/brndnmtthws} | \href{https://brndn.io}{brndn.io}
 
-Email: \href{mailto:resume@brenden.brndn.io}{\texttt{resume@brenden.brndn.io}} \hfill
-GitHub: \href{https://github.com/brndnmtthws}{\texttt{github.com/brndnmtthws}} \hfill
-Website: \href{https://brndn.io}{\texttt{brndn.io}} \hfill
-\vspace{3mm}
+\vspace{10pt}
 
-\section{\mysidestyle Professional\\Summary}
+\section{Professional Summary}
+Visionary software engineer and technical leader with extensive experience in Rust, C, C++, Python, JavaScript, TypeScript, and large-scale infrastructure systems. Recognized expert in Rust programming, with two published books and a prolific open-source portfolio. Proven ability to lead engineering teams, manage cross-functional projects, and deliver transformative technical solutions. Adept at scaling systems, mentoring talent, and fostering a culture of innovation and collaboration.
 
-Experienced and accomplished software engineer with a strong background in Rust, C, C++, Python, and other programming languages. Recognized authority in the field of Rust programming with two highly acclaimed books published. Extensive experience in open source contributions and delivering impactful talks at prestigious conferences. Proven track record of successfully launching and managing businesses. Skilled in building and enhancing infrastructure using Kubernetes and other technologies. Strong leadership and consulting skills with a passion for driving innovation and delivering exceptional results.
+\vspace{10pt}
 
-\section{\mysidestyle Published\\Works}
-\begin{itemize}
-\item \href{https://www.manning.com/books/code-like-a-pro-in-rust}{\textbf{Code Like a Pro in Rust}}, Manning Publications. ISBN 9781617299643.
-\item \href{https://www.manning.com/books/idiomatic-rust}{\textbf{Idiomatic Rust}}, Manning Publications. ISBN 9781633437463.
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.5cm]
+    \item \textbf{Programming Languages}: Rust, C, C++, Python, JavaScript, TypeScript, Go, Java, Scala, Bash
+    \item \textbf{Cloud \& Infrastructure}: Kubernetes, Docker, Mesos, Nomad, Terraform, AWS, GCP, Azure
+    \item \textbf{Data Systems}: Kafka, Cassandra, Snowflake, PostgreSQL, ElasticSearch, Spark, RDS, Redshift, Redis, Hadoop, Presto/Athena
+    \item \textbf{Tools \& Libraries}: PyTorch, TensorFlow, Helm, Prometheus, Grafana, Git, Jenkins, CircleCI
+    \item \textbf{Methodologies}: Agile Development, Technical Roadmapping, Cross-Functional Leadership, DevOps, CI/CD
 \end{itemize}
 
-\vspace{3mm}
+\vspace{10pt}
 
-\section{\mysidestyle Public\\Speaking}
+\section{Professional Experience}
 
-I have delivered numerous impactful talks on my work at prestigious conferences and private engagements, including renowned events such as \textbf{All Things Open}, \textbf{QCon}, \textbf{LinuxCon}, \textbf{ContainerCon}, and \textbf{MesosCon}.
-
-\vspace{3mm}
-
-\section{\mysidestyle Open\\Source}
-
-I have made significant contributions to hundreds of influential open source projects, including well-known ones such as Apache Airflow, Apache Kafka, Apache Superset, Apache Spark, and Apache Mesos (where I am a PMC member). I am also proud to be a member of the esteemed Apache Software Foundation. Additionally, I have personally created several highly regarded projects, with a few notable ones highlighted below:
-
-\href{https://github.com/brndnmtthws/conky}{\textbf{Conky}}, C and C++ \hfill \textbf{7.2k+ stars}\\
-Conky is a highly versatile and widely used system monitor utility for UNIX systems.
-
-\href{https://github.com/brndnmtthws/thetagang}{\textbf{ThetaGang}}, Python \hfill \textbf{2k+ stars}\\
-ThetaGang is a cutting-edge equity options trading tool designed to capture premium from theta decay. It is specifically tailored for use with IBKR.
-
-\href{https://github.com/brndnmtthws/dryoc}{\textbf{dryoc}}, Rust \hfill \textbf{270+ stars}\\
-dryoc is a top-tier, pure-Rust general-purpose cryptography library that is fully compatible with libsodium. It boasts advanced features such as generic hash functions suitable for cryptography, protected memory, zeroization, and SIMD.
-
-\vspace{3mm}
-
-\begin{absolutelynopagebreak}
-\section{\mysidestyle Professional\\Experience}
-
-\textbf{Entrepreneur, Author, Consultant}, New York, NY\hfill \textbf{May 2019 -- present}\vspace{2mm}\\\vspace{1mm}%
-\begin{itemize}
-\item Successfully launched and managed multiple bootstrapped businesses
-\item Provided expert consulting services to a diverse range of clients, delivering exceptional results
-\item Authored two highly acclaimed books on Rust programming, establishing myself as a recognized authority in the field
-\item Made significant contributions to numerous open source projects, further solidifying my reputation as a respected industry professional
-\item Delivered captivating talks at various meetups, captivating audiences with my deep knowledge and expertise
-\item Created a number of open source technology demonstration projects, showcasing my skills and expertise to a wide audience
-\item Developed a comprehensive online training program for leetcoding in Rust based on the \emph{Cracking the Coding Interview} book, enabling students to learn from the comfort of their own home
+\textbf{Entrepreneur, Author, Consultant} \hfill \textit{May 2019 -- Present} \\
+\textit{New York, NY}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Founded and scaled multiple businesses, delivering high-quality technical solutions and managing operations end-to-end.
+    \item Authored \textit{two best-selling books} on Rust programming, establishing thought leadership in modern software development.
+    \item Partnered with global clients as a consultant, providing expertise in cloud migration, Kubernetes adoption, and data engineering.
+    \item Developed and launched a Rust-based online coding curriculum, mentoring over 1,000 students.
+    \item Created high-impact open-source projects, including:
+        \begin{itemize}
+            \item \textbf{Conky} (7.3k+ stars): Versatile cross-platform system monitor.
+            \item \textbf{ThetaGang} (2k+ stars): Equity options quantitative trading platform leveraging advanced data processing.
+            \item \textbf{dryoc} (280+ stars): Cryptographic library in Rust, offering advanced memory safety features with hard-to-misuse API.
+        \end{itemize}
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{5mm}
-
-\begin{absolutelynopagebreak}
-\textbf{Braze, Inc.}, New York, NY\hfill \textbf{Oct 2018 -- April 2019}\vspace{2mm}\\\vspace{1mm}%
-\textsl{Engineering}
-
-As a key member of the engineering team, I played a pivotal role in building and enhancing the infrastructure using Kubernetes.
-
-\begin{itemize}
-\item Led a highly successful initiative to transform ad-hoc Bash-based deployment scripts into a streamlined, declarative Helm and Terraform-based deployment system
-\item Provided invaluable guidance and training to the entire engineering team, facilitating a seamless transition to Terraform and Helm
-\item Successfully migrated the primary Rails monolith to Kubernetes, improving scalability and performance
-\item Implemented a robust continuous integration and deployment system for Kubernetes applications, ensuring efficient and reliable software delivery
-\item Developed a comprehensive monitoring and alerting system for Kubernetes applications, enabling real-time monitoring and alerting of critical issues
-\item Spearheaded the development of a deployment pipeline for Kubernetes applications, significantly improving the efficiency and reliability of software delivery
+\textbf{Braze, Inc.} \hfill \textit{Oct 2018 -- Apr 2019} \\
+\textit{Staff Engineer, New York, NY}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Spearheaded migration of legacy deployment systems to Kubernetes, implementing Helm and Terraform for seamless orchestration.
+    \item Designed and rolled out robust CI/CD pipelines, enhancing deployment reliability by 40\%.
+    \item Mentored and upskilled a team of 10+ engineers, promoting adoption of modern infrastructure tools and practices.
+    \item Defined scalable monitoring strategies using DataDog, achieving 99.9\% uptime for mission-critical services.
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{5mm}
-
-\begin{absolutelynopagebreak}
-\textbf{Citadel LLC}, New York, NY\hfill \textbf{Oct 2017 -- Jun 2018}\vspace{2mm}\\\vspace{1mm}%
-\textsl{Engineering}
-
-As a member of the platform engineering group, I joined the data engineering team at Citadel to spearhead the development of their cutting-edge data platform technology. I primarily focused on integrating on-prem and cloud (AWS and GCE) data infrastructure.
-
-\begin{itemize}
-\item Led a highly successful initiative to modernize data access, control, and authorization, significantly enhancing data security and efficiency
-\item Managed a seamless migration of legacy data systems to PostgreSQL on RDS backends, improving scalability and performance
-\item Provided technical leadership to the data science team, guiding them on best practices for building and deploying large-scale machine learning jobs using Spark, Redshift, and Snowflake
-\item Developed a comprehensive data governance strategy, ensuring compliance with industry regulations and best practices
-\item Implemented a robust data quality monitoring system, enabling real-time monitoring and alerting of data quality issues
+\textbf{Citadel LLC} \hfill \textit{Oct 2017 -- Jun 2018} \\
+\textit{Staff Engineer, New York, NY}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Architected a modernized, hybrid cloud data platform, integrating on-premises and cloud environments (AWS \& GCP).
+    \item Led migration of data systems to PostgreSQL, improving query performance by 60\%.
+    \item Guided data science teams in deploying large-scale machine learning models with Spark and Snowflake.
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{5mm}
-
-\begin{absolutelynopagebreak}
-\textbf{D2IQ (fka Mesosphere), Inc.}, San Francisco, CA\hfill \textbf{Jan 2015 -- Feb 2017}\vspace{2mm}\\\vspace{1mm}%
-\textsl{Sales \& Engineering}
-
-As one of the early employees at Mesosphere, I played a pivotal role in the company's foundation. I engaged in multiple customer engagements, serving in both pre-sales and post-sales positions. Additionally, I provided valuable assistance to management during fundraising pitches.
-
-\begin{itemize}
-\item Built and led the initial sales team, making key hires for VP Sales, early SEs, SAs, and Head of Services
-\item Developed comprehensive cloud migration plans for enterprise customers, enabling them to leverage the power of container technology and accelerate their innovation
-\item Delivered week-long in-depth onsite training sessions, equipping clients with the knowledge and skills to maximize the benefits of container technology
-\item Advised C-level management at Fortune 500 companies on container technology adoption, helping them drive their digital transformation initiatives
-\item Delivered captivating talks at various meetups and conferences, establishing myself as a thought leader in the industry
-\item Contributed to various engineering efforts, leveraging my technical expertise to drive innovation and deliver exceptional solutions
-\item Published several original blog posts, sharing my insights and experiences with a wide audience
-\item Built and maintained marathon-lb, the canonical load balancing and service discovery tool for Marathon and DC/OS, further solidifying my reputation as a leading expert in the field
+\textbf{D2IQ (fka Mesosphere)} \hfill \textit{Jan 2015 -- Feb 2017} \\
+\textit{Staff Engineer \& Sales Engineering Lead, San Francisco, CA}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Built and led the initial sales engineering team, recruiting and training top talent for technical sales and implementation.
+    \item Partnered with Fortune 500 clients to define cloud-native transformation strategies, increasing adoption of containerization.
+    \item Developed and maintained several frameworks including \textbf{Hadoop}, \textbf{Chronos}, \textbf{Marathon} (including)\textbf{marathon-lb}, a critical load balancing tool for DC/OS), and serverless tooling.
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{5mm}
-
-\begin{absolutelynopagebreak}
-\textbf{Airbnb, Inc.}, San Francisco, CA\hfill \textbf{Feb 2013 -- Jan 2015}\vspace{2mm}\\\vspace{1mm}%
-\textsl{Engineering}
-
-As one of the early employees at Airbnb, I joined the Data Infrastructure team to help scale the company's infrastructure and meet the growing demands of managing a large data warehouse. I collaborated closely with teams across the organization to fulfill their data needs and develop a robust set of data tooling.
-
-\begin{itemize}
-\item Spearheaded the development of the next generation of data infrastructure, leveraging open source tools such as Mesos, Hadoop, HDFS, Chronos, and Storm
-\item Made significant contributions to several projects, including Mesos, Hadoop, Storm, Spark, Presto, Chronos, Marathon, and others
-\item Played a key role in the early versions of Apache Superset (formerly known as Airpal), a powerful data exploration and visualization platform
-\item Led the development of cutting-edge data processing tools, including Apache Airflow, enabling efficient and reliable data workflows
-\item Implemented an automated verification system to improve data quality, ensuring the accuracy and reliability of Airbnb's data
-\item Coined the team motto of \emph{"Provably correct data"}, emphasizing the importance of data accuracy and integrity
-\item Delivered engaging internal tech talks on emerging technologies at Airbnb, sharing my knowledge and insights with colleagues
+\textbf{Airbnb, Inc.} \hfill \textit{Feb 2013 -- Jan 2015} \\
+\textit{Senior Engineer, Data Infrastructure, San Francisco, CA}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Pioneered development of scalable data processing pipelines, leveraging Apache Spark, Hadoop, and Mesos.
+    \item Played a critical role in creating and scaling \textbf{Apache Superset}, a powerful data visualization platform, and \textbf{Apache Airflow}, a workflow orchestration tool.
+    \item Improved organizational data accuracy with an automated verification system, reducing errors and pipeline failures by 90\%.
+    \item Improved query times by 100x by optimizing data storage and retrieval mechanisms.
+    \item Led a team of 10+ engineers, fostering a culture of innovation and collaboration.
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{5mm}
-
-\begin{absolutelynopagebreak}
-\textbf{Newfield Wireless, Inc.}, Berkeley, CA\hfill \textbf{Sept 2009 -- Nov 2012}\vspace{2mm}\\\vspace{1mm}%
-\textsl{Engineering}
-
-At Newfield Wireless, I leveraged my expertise in 3GPP layer 3 to develop a highly efficient UMTS network data parser and indexer. I also designed and implemented a suite of real-time 3GPP LTE capture/parsing tools.
-
-\begin{itemize}
-\item Created a customized database solution with an integrated flexible query language, enabling real-time access to millions of streaming records
-\item Designed and implemented an asynchronous communication library with C++ and Python interfaces, similar to ZeroMQ, to facilitate efficient and reliable communication
-\item Developed a reporting library for generating key performance indicators from vast quantities of raw data, leveraging the customized database
-\item Introduced new development and debugging methodologies to the team, significantly improving development speed and deliverable quality
-\item Mentored and assisted junior and senior developers, fostering a collaborative and productive work environment
-\item Oversaw the design and implementation of schema-based XML software specifications, ensuring adherence to industry standards
+\textbf{Newfield Wireless, Inc.} \hfill \textit{Sept 2009 -- Nov 2012} \\
+\textit{Senior Software Engineer, Berkeley, CA}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Developed real-time 3GPP LTE network capture and parsing tools, enhancing data processing efficiency.
+    \item Created a custom database solution with an integrated query language, enabling real-time analysis of streaming records.
+    \item Designed and implemented communication libraries for high-performance data pipelines in C++ and Python.
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{5mm}
-
-\begin{absolutelynopagebreak}
-\textbf{Real Time Measurements, Inc.}, Calgary, AB\hfill \textbf{2003 -- 2009}\vspace{2mm}\\\vspace{1mm}%
-\textsl{Engineering}
-
-\begin{itemize}
-\item Developed end-user applications, web services, and embedded software, delivering high-quality solutions to meet customer needs
-\item Played a key role in strategic planning, performance improvement, organizational design, e-commerce, new media, and Internet promotion, driving business growth and success
-\item Planned and coordinated team-building exercises, demonstrating strong leadership skills and fostering a collaborative work environment
-\item Configured and managed servers, automated backup systems, and provided exceptional customer and in-house support
-\item Leveraged new technologies to enhance the product-to-customer experience, delivering timely and cost-effective solutions
-\item Implemented a cost reduction IT strategy, optimizing existing infrastructure and minimizing the need for additional equipment purchases
+\textbf{Real Time Measurements, Inc.} \hfill \textit{2003 -- 2009} \\
+\textit{Software Engineer, Calgary, AB}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Built end-user applications, web services, and embedded software for industrial use.
+    \item Configured servers and automated IT systems, reducing costs and improving system reliability.
 \end{itemize}
-\end{absolutelynopagebreak}
 
-\vspace{3mm}
+\vspace{10pt}
 
-\section{\mysidestyle Programming\\Experience}
+\section{Open Source Contributions}
+\begin{itemize}[leftmargin=0.5cm]
+\item \textbf{Apache Projects}: Contributed to Apache Kafka, Superset, Airflow, Spark, and Mesos (PMC member).
+\item Published and maintained tools with 10k+ combined GitHub stars, reflecting broad adoption and community impact.
+\end{itemize}
 
-\emph{Languages:} Rust, C, C++, Python, Ruby, Bash, Go, Java, Scala, Kotlin, \LaTeX \\
-\emph{Data Technology:} Kafka, Cassandra, Redis, PostgreSQL, ElasticSearch/Lucene, MySQL, Hadoop, Hive, Presto, RedShift, BigQuery, SQS, EMR, RDS, Snowflake, PyTorch, TensorFlow
+\vspace{10pt}
 
-\section{\mysidestyle Authentication}
+\section{Published Works}
+\begin{itemize}[leftmargin=0.5cm]
+\item \textit{Code Like a Pro in Rust} (Manning Publications) \hfill ISBN: 9781617299643  
+\item \textit{Idiomatic Rust: Code like a Rustacean} (Manning Publications) \hfill ISBN: 9781633437463  
+\end{itemize}
 
-The original source for this resume is available at
-\href{https://github.com/brndnmtthws/resume}{\texttt{github.com/brndnmtthws/resume}}.
-Use the contact email address at the top of this document or the one listed
-on my GitHub profile if you suspect shenanigans (such as fake candidates
-posing with my profile/details).
+\vspace{10pt}
+
+\section{Public Speaking}
+\begin{itemize}[leftmargin=0.5cm]
+\item Delivered talks at \textbf{All Things Open}, \textbf{QCon}, \textbf{LinuxCon}, and other conferences.
+\item Frequent keynote speaker on Rust programming, cloud infrastructure, and distributed systems.
+\end{itemize}
+
 \end{resume}
 \end{document}

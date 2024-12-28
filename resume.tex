@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usepackage{enumitem}
 \setlength{\textheight}{9.7in}
+
 \newenvironment{absolutelynopagebreak}
 {\par\nobreak\vfil\penalty0\vfilneg
 \vtop\bgroup}
@@ -16,115 +17,118 @@
 \end{tikzpicture} \name{\Large Brenden Matthews}
 \begin{resume}
 
-\section{Contact} \href{mailto:resume@brenden.brndn.io}{resume@brenden.brndn.io} | \href{https://github.com/brndnmtthws}{github.com/brndnmtthws} | \href{https://brndn.io}{brndn.io}
+\section{Contact}
+\begin{tabular}{@{}c|c|c|c@{}}
+ \href{mailto:resume@brenden.brndn.io}{resume@brenden.brndn.io} & \href{https://github.com/brndnmtthws}{github.com/brndnmtthws} & \href{https://linkedin.com/in/brndnmtthws}{linkedin.com/in/brndnmtthws} & \href{https://brndn.io}{brndn.io} \\ 
+\end{tabular}
 
 \vspace{10pt}
 
-\section{Professional Summary}
-Visionary software engineer and technical leader with extensive experience in Rust, C, C++, Python, JavaScript, TypeScript, and large-scale infrastructure systems. Recognized expert in Rust programming, with two published books and a prolific open-source portfolio. Proven ability to lead engineering teams, manage cross-functional projects, and deliver transformative technical solutions. Adept at scaling systems, mentoring talent, and fostering a culture of innovation and collaboration.
+\section{Software Engineering Summary}
+Accomplished software engineer with extensive experience in Rust, C, C++, Python, JavaScript, TypeScript, and large-scale infrastructure. Published author of two Rust books and creator of multiple open-source projects with 10k+ combined GitHub stars. Skilled in architecting high-performance, highly available systems, mentoring cross-functional teams, and driving technical excellence across organizations.
 
 \vspace{10pt}
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.5cm]
-    \item \textbf{Programming Languages}: Rust, C, C++, Python, JavaScript, TypeScript, Go, Java, Scala, Bash
-    \item \textbf{Cloud \& Infrastructure}: Kubernetes, Docker, Mesos, Nomad, Terraform, AWS, GCP, Azure
+    \item \textbf{Languages}: Rust, C, C++, Python, JavaScript, TypeScript, Go, Java, Scala, Clojure, Ruby, Elixir, Erlang, Bash
+    \item \textbf{Cloud/Infrastructure}: Kubernetes, Docker, Mesos, Nomad, Terraform, AWS, GCP, Azure
     \item \textbf{Data Systems}: Kafka, Cassandra, Snowflake, PostgreSQL, ElasticSearch, Spark, RDS, Redshift, Redis, Hadoop, Presto/Athena
-    \item \textbf{Tools \& Libraries}: PyTorch, TensorFlow, Helm, Prometheus, Grafana, Git, Jenkins, CircleCI
-    \item \textbf{Methodologies}: Agile Development, Technical Roadmapping, Cross-Functional Leadership, DevOps, CI/CD
+    \item \textbf{Tools/Libraries}: PyTorch, TensorFlow, Helm, Prometheus, Grafana, Git, Jenkins, CircleCI
+    \item \textbf{Methodologies}: Agile Development, Cross-Functional Roadmapping, DevOps, CI/CD
 \end{itemize}
 
 \vspace{10pt}
 
 \section{Professional Experience}
 
-\textbf{Entrepreneur, Author, Consultant} \hfill \textit{2019 -- Present} \\
+\textbf{Entrepreneur, Author, Consultant} \hfill \textit{2019 -- Present}\\
 \textit{New York, NY}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Founded and scaled multiple businesses, delivering high-quality technical solutions and managing operations end-to-end.
-    \item Authored \textit{two best-selling books} on Rust programming, establishing thought leadership in modern software development.
-    \item Partnered with global clients as a consultant, providing expertise in cloud migration, Kubernetes adoption, and data engineering.
-    \item Developed and launched a Rust-based online coding curriculum, mentoring over 1,000 students.
-    \item Created high-impact open-source projects, including:
+    \item Founded and scaled multiple businesses, providing full-stack solutions and overseeing end-to-end product development.
+    \item Authored two best-selling Rust programming books, establishing recognized expertise and community engagement.
+    \item Advised global clients on cloud migrations and Kubernetes-based solutions, boosting reliability while cutting operational costs.
+    \item Developed a Rust-based online coding curriculum, mentoring 1,000+ students and generating additional revenue streams.
+    \item Built high-impact open-source projects:
         \begin{itemize}
-            \item \href{https://github.com/brndnmtthws/conky/}{\textbf{Conky}} (7.3k+ stars): Versatile cross-platform system monitor.
-            \item \href{https://github.com/brndnmtthws/thetagang/}{\textbf{ThetaGang}} (2k+ stars): Equity options quantitative trading platform leveraging advanced data processing.
-            \item \href{https://github.com/brndnmtthws/dryoc/}{\textbf{dryoc}} (280+ stars): Cryptographic library in Rust, offering advanced memory safety features with hard-to-misuse API.
+            \item \href{https://github.com/brndnmtthws/conky/}{\textbf{Conky}} (7.4k+ stars): A cross-platform system monitor with extensive customization.
+            \item \href{https://github.com/brndnmtthws/thetagang/}{\textbf{ThetaGang}} (2.1k+ stars): Equity options trading platform leveraging advanced data processing.
+            \item \href{https://github.com/brndnmtthws/dryoc/}{\textbf{dryoc}} (290+ stars): A Rust cryptographic library offering memory-safe APIs.
         \end{itemize}
 \end{itemize}
 
-\textbf{Braze, Inc.} \hfill \textit{2018 -- 2019} \\
+\textbf{Braze, Inc.} \hfill \textit{2018 -- 2019}\\
 \textit{Staff Engineer, New York, NY}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Spearheaded migration of legacy deployment systems to Kubernetes, implementing Helm and Terraform for seamless orchestration.
-    \item Designed and rolled out robust CI/CD pipelines, enhancing deployment reliability by 40\%.
-    \item Mentored and upskilled a team of 10+ engineers, promoting adoption of modern infrastructure tools and practices.
-    \item Defined scalable monitoring strategies using DataDog, achieving 99.9\% uptime for mission-critical services.
+    \item Orchestrated a large-scale migration from custom deployment scripts to Kubernetes, accelerating feature releases by 30\%.
+    \item Deployed Helm and Terraform to automate provisioned environments, cutting manual configuration errors by 50\%.
+    \item Built robust CI/CD pipelines to increase deployment reliability by 40\% and reduce lead time for change.
+    \item Instituted a unified monitoring strategy (DataDog), issuing proactive alerts and achieving 99.9\% service uptime.
 \end{itemize}
 
-\textbf{Citadel LLC} \hfill \textit{2017 -- 2018} \\
+\textbf{Citadel LLC} \hfill \textit{2017 -- 2018}\\
 \textit{Staff Engineer, New York, NY}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Architected a modernized, hybrid cloud data platform, integrating on-premises and cloud environments (AWS \& GCP).
-    \item Led migration of data systems to PostgreSQL, improving query performance by 60\%.
-    \item Guided data science teams in deploying large-scale machine learning models with Spark and Snowflake.
+    \item Modernized on-prem data infrastructure by integrating AWS and GCP services, lowering time to provision new analytics by 70\%.
+    \item Led migration to PostgreSQL and Spark-based architectures, improving query performance by 60\%.
+    \item Streamlined large-scale ML model deployment processes, enabling faster experimentation and reduced runtime costs.
 \end{itemize}
 
-\textbf{D2IQ (fka Mesosphere)} \hfill \textit{2015 -- 2017} \\
+\textbf{D2IQ (fka Mesosphere)} \hfill \textit{2015 -- 2017}\\
 \textit{Staff Engineer \& Sales Engineering Lead, San Francisco, CA}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Built and led the initial sales engineering team, recruiting and training top talent for technical sales and implementation.
-    \item Partnered with Fortune 500 clients to define cloud-native transformation strategies, increasing adoption of containerization.
-    \item Developed and maintained several frameworks including \textbf{Hadoop}, \textbf{Chronos}, \textbf{Marathon} (and \textbf{marathon-lb}, a critical load balancing tool for DC/OS), and serverless tooling.
+    \item Assembled the first sales engineering team, bridging technical and business domains to close multi-million-dollar accounts.
+    \item Guided Fortune 500 firms in containerization and distributed systems adoption, accelerating cloud-native transformation.
+    \item Contributed to frameworks like Hadoop, Chronos, Marathon, and marathon-lb, enabling mission-critical workloads on DC/OS.
 \end{itemize}
 
-\textbf{Airbnb, Inc.} \hfill \textit{2013 -- 2015} \\
+\textbf{Airbnb, Inc.} \hfill \textit{2013 -- 2015}\\
 \textit{Software Engineer, Data Infrastructure, San Francisco, CA}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Pioneered development of scalable data processing pipelines, leveraging Apache Spark, Hadoop, and Mesos.
-    \item Played a critical role in creating and scaling \textbf{Apache Superset}, a powerful data visualization platform, and \textbf{Apache Airflow}, a workflow orchestration tool.
-    \item Improved organizational data accuracy with an automated verification system, reducing errors and pipeline failures by 90\%.
-    \item Improved query times by 100x by optimizing data storage and retrieval mechanisms.
-    \item Led a team of 10+ engineers, fostering a culture of innovation and collaboration.
+    \item Built scalable data pipelines using Apache Spark, Hadoop, and Mesos, providing near-real-time analytics across teams.
+    \item Contributed to \textbf{Apache Superset} and \textbf{Apache Airflow}, increasing organizational visibility into ETL processes.
+    \item Decreased data inconsistency by 90\% with automated verification systems, boosting overall data reliability.
+    \item Optimized critical data retrieval mechanisms, achieving a 100x reduction in query times.
 \end{itemize}
 
-\textbf{Newfield Wireless, Inc.} \hfill \textit{2009 -- 2012} \\
+\textbf{Newfield Wireless, Inc.} \hfill \textit{2009 -- 2012}\\
 \textit{Senior Software Engineer, Berkeley, CA}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Developed real-time 3GPP LTE network capture and parsing tools, enhancing data processing efficiency.
-    \item Created a custom database solution with an integrated query language, enabling real-time analysis of streaming records.
-    \item Designed and implemented communication libraries for high-performance data pipelines in C++ and Python.
+    \item Developed real-time LTE network parsing tools, improving system throughput and cutting analysis time by 50\%.
+    \item Built custom database solutions with integrated query capabilities for instant investigation of streaming metrics.
+    \item Expanded high-performance data pipelines in C++ and Python, enabling rapid troubleshooting for telecom operators.
 \end{itemize}
 
-\textbf{Real Time Measurements, Inc.} \hfill \textit{2003 -- 2009} \\
+\textbf{Real Time Measurements, Inc.} \hfill \textit{2003 -- 2009}\\
 \textit{Software Engineer, Calgary, AB}
 \begin{itemize}[leftmargin=0.5cm]
-    \item Built end-user applications, web services, and embedded software for industrial use.
-    \item Configured servers and automated IT systems, reducing costs and improving system reliability.
+    \item Created embedded software for industrial hardware, focusing on real-time reliability and performance optimization.
+    \item Developed web services for remote device control, cutting manual intervention by 80\%.
+    \item Reduced IT overhead by automating server provisioning and configuration.
 \end{itemize}
 
 \vspace{10pt}
 
 \section{Open Source Contributions}
 \begin{itemize}[leftmargin=0.5cm]
-\item \textbf{Apache Projects}: Contributed to Apache Kafka, Superset, Airflow, Spark, and Mesos (PMC member).
-\item Published and maintained tools with 10k+ combined GitHub stars, reflecting broad adoption and community impact.
+    \item Contributed to major Apache projects: Kafka, Superset, Airflow, Spark, and Mesos (PMC member).
+    \item Maintained tools collectively earning 10k+ GitHub stars, reflecting wide community adoption.
 \end{itemize}
 
 \vspace{10pt}
 
 \section{Published Works}
 \begin{itemize}[leftmargin=0.5cm]
-\item \textit{Code Like a Pro in Rust} (Manning Publications) \hfill ISBN: 9781617299643  
-\item \textit{Idiomatic Rust: Code like a Rustacean} (Manning Publications) \hfill ISBN: 9781633437463  
+    \item \href{https://www.manning.com/books/code-like-a-pro-in-rust}{\textit{Code Like a Pro in Rust}} (Manning Publications) \hfill ISBN: 9781617299643
+    \item \href{https://www.manning.com/books/idiomatic-rust}{\textit{Idiomatic Rust: Code Like a Rustacean}} (Manning Publications) \hfill ISBN: 9781633437463
 \end{itemize}
 
 \vspace{10pt}
 
 \section{Public Speaking}
 \begin{itemize}[leftmargin=0.5cm]
-\item Delivered talks at \textbf{All Things Open}, \textbf{QCon}, \textbf{LinuxCon}, and other conferences.
-\item Frequent keynote speaker on Rust programming, cloud infrastructure, and distributed systems.
+    \item Presented at \textbf{All Things Open}, \textbf{QCon}, \textbf{LinuxCon}, highlighting best practices for Rust and cloud computing.
+    \item Keynoted on distributed systems and DevOps, offering insights on scalable architectures to global audiences.
 \end{itemize}
 
 \end{resume}

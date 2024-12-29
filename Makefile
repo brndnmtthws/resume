@@ -1,4 +1,4 @@
-PDFLATEX=pdflatex
+PDFLATEX=lualatex
 DEPS = resume.cls myface.jpg
 
 resume.pdf: resume.tex $(DEPS)

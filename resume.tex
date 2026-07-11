@@ -3,12 +3,39 @@
 \usepackage{tikz}
 \usepackage{enumitem}
 \usepackage{fontawesome5}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\renewcommand{\sectionfont}{\bfseries}
+\setlist[itemize]{leftmargin=1.25em,itemsep=1.5pt,topsep=0pt}
 \setlength{\textheight}{9.7in}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset[L]{\hoffset}
+\fancyhead[L]{\footnotesize\textsc{Brenden Matthews}}
+\fancyhead[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+\newcommand{\company}[1]{\textbf{#1}}
+\newcommand{\jobdates}[1]{\textit{#1}}
+\newcommand{\jobtitle}[1]{\textit{#1}}
+
+\hypersetup{
+  pdftitle={Brenden Matthews - Resume},
+  pdfauthor={Brenden Matthews},
+  pdfsubject={Software engineering resume},
+  pdfkeywords={Rust, distributed systems, financial infrastructure, software engineering}
+}
 
 \begin{document}
-\begin{tikzpicture}
-\clip (0,0) circle (1cm) ;
-\node[anchor=center] at (0,0) {\includegraphics[width=2cm]{myface}};
+\thispagestyle{empty}
+\begin{tikzpicture}[baseline={(0,-0.3cm)}]
+\clip (0,0) circle (0.875cm) ;
+\node[anchor=center] at (0,0) {\includegraphics[width=1.75cm]{myface}};
 \end{tikzpicture} \name{\Large Brenden Matthews}
 \begin{resume}
 
@@ -21,147 +48,143 @@
 
 \section{Professional Summary}
 
-Accomplished software engineer with extensive experience in many programming languages and large-scale infrastructure. Published author of two Rust books and creator of multiple open-source projects with 10k+ combined GitHub stars. Skilled in architecting high-performance, highly available systems, mentoring cross-functional teams, and driving technical excellence across organizations.
+Software engineer focused on infrastructure, distributed systems, and developer tooling, primarily in Rust. Currently building financial infrastructure at Ellipsis Labs; previously worked on data and infrastructure systems at Airbnb, Citadel, Braze, and D2iQ. Author of two Rust books and creator of open-source projects with more than 10,000 GitHub stars. Focused on correctness, operational simplicity, and systems that remain easy to understand as they grow.
 
-\begin{itemize}
-    \item Founded and scaled multiple businesses, providing full-stack solutions and overseeing end-to-end product development.
-    \item Authored two best-selling Rust programming books, establishing recognized expertise and community engagement.
-    \item Advised global clients on cloud migrations and Kubernetes-based solutions, boosting reliability while cutting operational costs.
-    \item Developed a Rust-based online coding curriculum, mentoring 1,000+ students and generating additional revenue streams.
-    \item Delivered keynote speeches at major tech conferences, sharing insights on Rust, cloud computing, and distributed systems.
-    \item Built multiple high-impact open-source projects:
-        \begin{itemize}
-            \item \href{https://github.com/brndnmtthws/conky/}{\textbf{Conky}} (7.5k+ stars): A cross-platform system monitor with extensive customization.
-            \item \href{https://github.com/brndnmtthws/thetagang/}{\textbf{ThetaGang}} (2.1k+ stars): Equity options trading platform leveraging advanced data processing.
-            \item \href{https://github.com/brndnmtthws/dryoc/}{\textbf{dryoc}} (300+ stars): A Rust cryptographic library offering memory-safe APIs.
-        \end{itemize}
-\end{itemize}
+\vspace{6pt}
 
-\vspace{10pt}
-
-\section{Technical Skills}
+\section{Technical\\Skills}
 
 \begin{itemize}[partopsep=0mm]
-    \item \textbf{Languages}: Rust, C, C++, Python, JavaScript, TypeScript, Go, Java, Scala, Clojure, Ruby, Elixir, Erlang, Bash
-    \item \textbf{Cloud/Infrastructure}: Kubernetes, Docker, Mesos, Nomad, Terraform, AWS, GCP, Azure
-    \item \textbf{Data Systems}: Kafka, Cassandra, Snowflake, PostgreSQL, ElasticSearch, Spark, RDS, Redshift, Redis, Hadoop, Presto/Athena
-    \item \textbf{Tools/Libraries}: PyTorch, TensorFlow, Helm, Prometheus, Grafana, Git, Jenkins, CircleCI
-    \item \textbf{Methodologies}: Agile Development, Cross-Functional Roadmapping, DevOps, CI/CD
+    \item \textbf{Languages}: Rust, C, C++, Python, JavaScript, TypeScript, Clojure, Go, Java, Scala, Ruby, Bash
+    \item \textbf{Systems \& Infrastructure}: Distributed systems, Kubernetes, Docker, Terraform, Helm, AWS, CI/CD, observability
+    \item \textbf{Data Systems}: Kafka, PostgreSQL, Redis, Snowflake, Spark, Hadoop, Presto/Athena, Cassandra
 \end{itemize}
 
-\textit{Non-exhaustive listing, provided in no particular order.}
-
-\vspace{10pt}
+\vspace{6pt}
 
 \section{Professional Experience}
 
 \filbreak
-\textbf{Ellipsis Labs} \hfill \textit{2025 -- present}\\
-\textit{Software Engineer, New York, NY}
+\company{Ellipsis Labs} \hfill \jobdates{2025 - Present}\\
+\jobtitle{Software Engineer, New York, NY}
 
 \begin{itemize}
-    \item Building Atlas, a next-generation global computer for financial services.
+    \item Own cross-cutting systems across Rust backend services and the frontend application, with a focus on performance, correctness, and reliability.
+    \item Designed and implemented the platform's authentication stack and protocol across frontend and backend systems.
+    \item Define and improve contracts between frontend and backend systems, reducing complexity and making application behavior more predictable.
+    \item Reworked market-data caching and charting infrastructure to improve correctness, performance, and maintainability.
+    \item Harden frontend behavior around authentication, state management, data loading, error handling, and production edge cases.
+    \item Improve CI, testing, observability, deployment tooling, and operational reliability across the stack.
 \end{itemize}
 
 \filbreak
-\textbf{owl.co} \hfill \textit{2022 -- 2023}\\
-\textit{Software Engineer, New York, NY}
+\company{owl.co} \hfill \jobdates{2022 - 2023}\\
+\jobtitle{Software Engineer, New York, NY}
 
 \begin{itemize}
-    \item Mentored junior developers, enhancing their skills and contributing to a more productive development team.
-    \item Implemented modern agile development practices, significantly increasing code quality and team efficiency.
-    \item Led the initiative to version control AWS infrastructure, reducing deployment errors by 50\% and enhancing security and compliance.
+    \item Built and maintained core product systems using Clojure and AWS.
+    \item Simplified deployment and application architecture while improving reliability and test coverage.
+    \item Mentored engineers and helped establish more consistent development and code-review practices.
 \end{itemize}
 
 \filbreak
-\textbf{Braze, Inc.} \hfill \textit{2018 -- 2019}\\
-\textit{Software Engineer, New York, NY}
+\company{Self-employed} \hfill \jobdates{2019 - 2023}\\
+\jobtitle{Independent Founder and Software Engineer}
+
+Built and launched several independent software products, including Fuudi, blogmail, YourHome.AI, and Umpyre. Owned product engineering, infrastructure, customer discovery, and early go-to-market work.
+
+\newpage
+\vspace*{7pt}
+
+\company{Braze} \hfill \jobdates{2018 - 2019}\\
+\jobtitle{Software Engineer, New York, NY}
 
 \begin{itemize}
-    \item Orchestrated a large-scale migration from custom deployment scripts to Kubernetes, accelerating feature releases by 30\%.
-    \item Deployed Helm and Terraform to automate provisioned environments, cutting manual configuration errors by 50\%.
-    \item Built robust CI/CD pipelines to increase deployment reliability by 40\% and reduce lead time for change.
-    \item Instituted a unified monitoring strategy (DataDog), issuing proactive alerts and achieving 99.9\% service uptime.
+    \item Migrated deployment infrastructure to Kubernetes using Helm and Terraform.
+    \item Built CI/CD and observability systems for production services.
+    \item Mentored engineers in Kubernetes, infrastructure automation, and production deployment practices.
 \end{itemize}
 
 \filbreak
-\textbf{Citadel LLC} \hfill \textit{2017 -- 2018}\\
-\textit{Software Engineer, New York, NY}
+\company{Citadel} \hfill \jobdates{2017 - 2018}\\
+\jobtitle{Software Engineer, New York, NY}
 
 \begin{itemize}
-    \item Modernized on-prem data infrastructure by integrating AWS and GCP services, lowering time to provision new analytics by 70\%.
-    \item Led migration to PostgreSQL and Spark-based architectures, improving query performance by 60\%.
-    \item Streamlined large-scale ML model deployment processes, enabling faster experimentation and reduced runtime costs.
+    \item Built hybrid-cloud data infrastructure spanning on-premises and cloud environments.
+    \item Migrated data workloads to PostgreSQL and improved query performance.
+    \item Built and supported infrastructure for large-scale data science and machine learning workloads using Spark and Snowflake.
 \end{itemize}
 
 \filbreak
-\textbf{D2IQ (fka Mesosphere)} \hfill \textit{2015 -- 2017}\\
-\textit{Software Engineer \& Sales Engineering Lead, San Francisco, CA}
+\company{D2iQ (formerly Mesosphere)} \hfill \jobdates{2015 - 2017}\\
+\jobtitle{Early Engineer / Sales Engineering Lead, San Francisco, CA}
+
+Involved with Mesosphere from its earliest stages, including fundraising, product development, and go-to-market, before formally joining full-time.
 
 \begin{itemize}
-    \item Assembled the first sales engineering team, bridging technical and business domains to close multi-million-dollar accounts.
-    \item Guided Fortune 500 firms in containerization and distributed systems adoption, accelerating cloud-native transformation.
-    \item Contributed to frameworks like Hadoop, Chronos, Marathon, and marathon-lb, enabling mission-critical workloads on DC/OS.
+    \item Built the company's initial sales engineering function, including hiring, technical sales, customer architecture, and implementation.
+    \item Traveled extensively to work directly with customers around the world, helping them evaluate, deploy, and operate Mesosphere's distributed systems platform in production.
+    \item Worked across engineering, product, and sales to translate customer requirements into product direction and technical solutions.
+    \item Made substantial contributions to Apache Mesos and built major parts of the commercial platform around Mesos, Marathon, and Chronos.
+    \item Played a central role in turning the company from an open-source infrastructure project into an enterprise software business.
 \end{itemize}
 
 \filbreak
-\textbf{Airbnb, Inc.} \hfill \textit{2013 -- 2015}\\
-\textit{Software Engineer, Data Infrastructure, San Francisco, CA}
+\company{Airbnb} \hfill \jobdates{2013 - 2015}\\
+\jobtitle{Software Engineer, Data Infrastructure, San Francisco, CA}
 
 \begin{itemize}
-    \item Built scalable data pipelines using Apache Spark, Hadoop, and Mesos, providing near-real-time analytics across teams.
-    \item Contributed to \textbf{Apache Superset} and \textbf{Apache Airflow}, increasing organizational visibility into ETL processes.
-    \item Decreased data inconsistency by 90\% with automated verification systems, boosting overall data reliability.
-    \item Optimized critical data retrieval mechanisms, achieving a 100x reduction in query times.
+    \item Built large-scale data processing systems using Spark, Hadoop, and Mesos.
+    \item Contributed to the early development and internal adoption of Apache Airflow and Apache Superset.
+    \item Built automated data validation systems that substantially reduced pipeline failures.
+    \item Improved analytical query performance by redesigning storage and retrieval systems.
+\end{itemize}
+
+\newpage
+\vspace*{7pt}
+
+\company{Newfield Wireless (now NETSCOUT)} \hfill \jobdates{2009 - 2012}\\
+\jobtitle{Software Engineer, Berkeley, CA}
+
+\begin{itemize}
+    \item Built real-time 3GPP LTE network capture and parsing systems.
+    \item Designed a custom database and query language for analyzing streaming telecommunications records.
+    \item Built high-performance data-processing and communications libraries in C++ and Python.
 \end{itemize}
 
 \filbreak
-\textbf{Newfield Wireless, Inc.} \hfill \textit{2009 -- 2012}\\
-\textit{Senior Software Engineer, Berkeley, CA}
+\company{Real Time Measurements} \hfill \jobdates{2003 - 2009}\\
+\jobtitle{Software Engineer, Calgary, AB}
 
 \begin{itemize}
-    \item Developed real-time LTE network parsing tools, improving system throughput and cutting analysis time by 50\%.
-    \item Built custom database solutions with integrated query capabilities for instant investigation of streaming metrics.
-    \item Expanded high-performance data pipelines in C++ and Python, enabling rapid troubleshooting for telecom operators.
+    \item Built desktop applications, web services, and embedded software for industrial measurement systems.
+    \item Managed servers and automated internal infrastructure, deployments, and operational tasks.
 \end{itemize}
 
-\filbreak
-\textbf{Real Time Measurements, Inc.} \hfill \textit{2003 -- 2009}\\
-\textit{Software Engineer, Calgary, AB}
-
-\begin{itemize}
-    \item Created embedded software for industrial hardware, focusing on real-time reliability and performance optimization.
-    \item Developed web services for remote device control, cutting manual intervention by 80\%.
-    \item Reduced IT overhead by automating server provisioning and configuration.
-\end{itemize}
-
-\vspace{10pt}
+\vspace{8pt}
 
 \section{Open Source Contributions}
 
 \begin{itemize}[partopsep=0mm]
-    \item Contributed to major Apache projects: Kafka, Superset, Airflow, Spark, and Mesos (PMC member).
-    \item Maintained tools collectively earning 10k+ GitHub stars, reflecting wide community adoption.
+    \item Member of the Apache Software Foundation and former Apache Mesos PMC member; contributor to Apache Airflow, Kafka, Mesos, Spark, Superset, and other projects.
+    \item Creator and maintainer of \href{https://github.com/brndnmtthws/conky/}{\textbf{Conky}}, \href{https://github.com/brndnmtthws/thetagang/}{\textbf{ThetaGang}}, and \href{https://github.com/brndnmtthws/dryoc/}{\textbf{dryoc}}, with more than 10,000 combined GitHub stars.
 \end{itemize}
 
-\vspace{10pt}
+\vspace{8pt}
 
 \section{Published Works}
 
 \begin{itemize}[partopsep=0mm]
-    \item \href{https://www.manning.com/books/code-like-a-pro-in-rust}{\textit{Code Like a Pro in Rust}} (Manning Publications) \hfill ISBN: 9781617299643
-    \item \href{https://www.manning.com/books/idiomatic-rust}{\textit{Idiomatic Rust: Code Like a Rustacean}} (Manning Publications) \hfill ISBN: 9781633437463
+    \item \href{https://www.manning.com/books/code-like-a-pro-in-rust}{\textit{Code Like a Pro in Rust}}, Manning, February 2024 \hfill ISBN 9781617299643
+    \item \href{https://www.manning.com/books/idiomatic-rust}{\textit{Idiomatic Rust: Code like a Rustacean}}, Manning, August 2024 \hfill ISBN 9781633437463
 \end{itemize}
 
-\vspace{10pt}
+\vspace{8pt}
 
-\section{Public Speaking}
+\section{Public\\Speaking}
 
 \begin{itemize}[partopsep=0mm]
-    \item Presented at \textbf{All Things Open}, \textbf{QCon}, \textbf{MesosCon}, \textbf{Spark Summit}, \textbf{LinuxCon}, highlighting best practices for Rust and cloud computing.
-    \item Delivered keynote presentations on distributed systems and DevOps at major conferences, providing insights on scalable architectures to global audiences.
-    \item Featured in podcast interviews discussing software engineering, cloud-native technologies, and open-source contributions, reaching a wide technical audience.
-    \item Conducted hands-on workshops on Rust programming, Kubernetes, distributed computing, and data engineering, enhancing community engagement and knowledge sharing.
+    \item Speaker at All Things Open, QCon, LinuxCon, ContainerCon, MesosCon, and private technical events.
 \end{itemize}
 
 \end{resume}

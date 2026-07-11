@@ -3,7 +3,7 @@ default: build
 # build resume.pdf
 build:
     echo Building...
-    lualatex resume.tex resume.cls myface.jpg
+    lualatex --interaction=nonstopmode --halt-on-error resume.tex
 
 # clean output (delete files)
 clean:

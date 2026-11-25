@@ -28,7 +28,7 @@
   pdftitle={Brenden Matthews - Resume},
   pdfauthor={Brenden Matthews},
   pdfsubject={Software engineering resume},
-  pdfkeywords={Rust, distributed systems, financial infrastructure, software engineering}
+  pdfkeywords={Rust, distributed systems, AI tooling, machine learning, full-stack systems, software engineering}
 }
 
 \begin{document}
@@ -48,9 +48,9 @@
 
 \section{Professional Summary}
 
-Software engineer focused on infrastructure, distributed systems, and developer tooling, primarily in Rust. Currently building financial infrastructure at Ellipsis Labs; previously worked on data and infrastructure systems at Airbnb, Citadel, Braze, and D2iQ. Author of two Rust books and creator of open-source projects with more than 10,000 GitHub stars. Focused on correctness, operational simplicity, and systems that remain easy to understand as they grow.
+Software engineer focused on end-to-end systems, 0-to-1 product and technical execution, and simplifying complex workflows. Currently building full-stack financial systems at Ellipsis Labs; previously early engineer/sales engineering lead at D2iQ (Mesosphere), founder, and data infrastructure engineer at Airbnb and Citadel, with earlier work in telecom and instrumentation. Author of two Rust books, creator of open-source projects (10,000+ GitHub stars), and contributor to LLM agent and Rust ML tooling.
 
-\vspace{6pt}
+\vspace{4pt}
 
 \section{Technical\\Skills}
 
@@ -60,7 +60,16 @@ Software engineer focused on infrastructure, distributed systems, and developer 
     \item \textbf{Data Systems}: Kafka, PostgreSQL, Redis, Snowflake, Spark, Hadoop, Presto/Athena, Cassandra
 \end{itemize}
 
-\vspace{6pt}
+\vspace{4pt}
+
+\section{ML \& AI\\Developer Tools}
+
+\begin{itemize}[partopsep=0mm]
+    \item \href{https://github.com/can1357/oh-my-pi}{\textbf{oh-my-pi}}: Shipped merged contributions to an open-source LLM coding agent, restoring interrupted turns after manual compaction (\href{https://github.com/can1357/oh-my-pi/pull/11873}{PR \#11873}) and fixing cross-provider reasoning serialization (\href{https://github.com/can1357/oh-my-pi/pull/11791}{PR \#11791}).
+    \item \href{https://github.com/brndnmtthws/hessboost}{\textbf{HessBoost}}: Maintain and develop a deterministic Rust gradient-boosting library with Python bindings and XGBoost compatibility/parity.
+\end{itemize}
+
+\vspace{4pt}
 
 \section{Professional Experience}
 
@@ -69,12 +78,10 @@ Software engineer focused on infrastructure, distributed systems, and developer 
 \jobtitle{Software Engineer, New York, NY}
 
 \begin{itemize}
-    \item Own cross-cutting systems across Rust backend services and the frontend application, with a focus on performance, correctness, and reliability.
-    \item Designed and implemented the platform's authentication stack and protocol across frontend and backend systems.
-    \item Define and improve contracts between frontend and backend systems, reducing complexity and making application behavior more predictable.
-    \item Reworked market-data caching and charting infrastructure to improve correctness, performance, and maintainability.
-    \item Harden frontend behavior around authentication, state management, data loading, error handling, and production edge cases.
-    \item Improve CI, testing, observability, deployment tooling, and operational reliability across the stack.
+    \item Own end-to-end systems across Rust backend services and frontend, defining cross-stack contracts that reduce complexity and improve predictability.
+    \item Designed and implemented the platform's authentication stack and protocol across backend and frontend.
+    \item Reworked market-data caching and charting infrastructure for correctness, performance, and maintainability.
+    \item Harden frontend state management, data loading, error handling, and production edge cases; improve CI, testing, observability, and deployment tooling.
 \end{itemize}
 
 \filbreak
@@ -91,7 +98,7 @@ Software engineer focused on infrastructure, distributed systems, and developer 
 \company{Self-employed} \hfill \jobdates{2019 - 2023}\\
 \jobtitle{Independent Founder and Software Engineer}
 
-Built and launched several independent software products, including Fuudi, blogmail, YourHome.AI, and Umpyre. Owned product engineering, infrastructure, customer discovery, and early go-to-market work.
+Built and launched several independent software products, including Fuudi, blogmail, YourHome.AI, and Umpyre. Owned 0-to-1 product engineering, infrastructure, customer discovery, and early go-to-market work.
 
 \newpage
 \vspace*{7pt}
@@ -122,11 +129,10 @@ Built and launched several independent software products, including Fuudi, blogm
 Involved with Mesosphere from its earliest stages, including fundraising, product development, and go-to-market, before formally joining full-time.
 
 \begin{itemize}
-    \item Built the company's initial sales engineering function, including hiring, technical sales, customer architecture, and implementation.
-    \item Traveled extensively to work directly with customers around the world, helping them evaluate, deploy, and operate Mesosphere's distributed systems platform in production.
     \item Worked across engineering, product, and sales to translate customer requirements into product direction and technical solutions.
-    \item Made substantial contributions to Apache Mesos and built major parts of the commercial platform around Mesos, Marathon, and Chronos.
-    \item Played a central role in turning the company from an open-source infrastructure project into an enterprise software business.
+    \item Made substantial contributions to Apache Mesos and built major parts of the commercial platform around Mesos, Marathon, and Chronos, playing a central role in turning an open-source infrastructure project into an enterprise software business.
+    \item Built the company's initial sales engineering function, including hiring, technical sales, customer architecture, and production implementation.
+    \item Worked directly with technical customers worldwide to evaluate, deploy, and operate Mesosphere's distributed systems platform in production.
 \end{itemize}
 
 \filbreak
@@ -134,10 +140,10 @@ Involved with Mesosphere from its earliest stages, including fundraising, produc
 \jobtitle{Software Engineer, Data Infrastructure, San Francisco, CA}
 
 \begin{itemize}
-    \item Built large-scale data processing systems using Spark, Hadoop, and Mesos.
     \item Contributed to the early development and internal adoption of Apache Airflow and Apache Superset.
     \item Built automated data validation systems that substantially reduced pipeline failures.
     \item Improved analytical query performance by redesigning storage and retrieval systems.
+    \item Built large-scale data processing systems using Spark, Hadoop, and Mesos.
 \end{itemize}
 
 \newpage
@@ -157,7 +163,7 @@ Involved with Mesosphere from its earliest stages, including fundraising, produc
 \jobtitle{Software Engineer, Calgary, AB}
 
 \begin{itemize}
-    \item Built desktop applications, web services, and embedded software for industrial measurement systems.
+    \item Built desktop applications, web services, and embedded software for industrial measurement and instrumentation systems.
     \item Managed servers and automated internal infrastructure, deployments, and operational tasks.
 \end{itemize}
 
